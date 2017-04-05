@@ -1,0 +1,162 @@
+// 功能样式
+.fn-clear:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.fn-clear {
+  zoom: 1;
+}
+
+.fn-left {
+  float: left !important;
+}
+
+.fn-right {
+  float: right !important;
+}
+
+.fn-show {
+  display: block !important;
+}
+
+.fn-hide {
+  display: none !important;
+}
+
+.ow-hd {
+  overflow: hidden !important;
+}
+
+.tn-l {
+  text-align: left !important;
+}
+
+.tn-c {
+  text-align: center !important;
+}
+
+.tn-r {
+  text-align: right !important;
+}
+
+.pd-20 {
+  padding: 20px;
+}
+.mt-10{
+  margin-top: 10px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.btn {
+  border: 0;
+  background: transparent;
+}
+
+.bg-dark {
+  background: @color-background;
+}
+
+.bg-img {
+  background: #e2e2e2 url(../img/shop/icon-mass.png) no-repeat center / 70px auto;
+  img[src=""] {
+    display: none;
+  }
+}
+
+// 滚动条样式
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+  position: relative;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #CCCCCC;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  height: 5px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  width: 5px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/*--清除谷歌浏览器下的 text 叉号*/
+input::-webkit-text-cancel-button{
+  display: none;
+}
+input[type=text]::-ms-clear{
+  display: none;
+}
+/*--清除IE下的 search 叉号*/
+/*当然如果想清除所有的input的话 ，只需把[type=search]去掉即可。*/
+input::-webkit-search-cancel-button{
+  display: none;
+}
+input[type=search]::-ms-clear{
+  display: none;
+}
+// 小眼睛
+input[type=password]::-ms-reveal{
+  display:none;
+}
+
+
+// 表单填写错误提示信息
+.error-tips{
+  background-color:#FEF2F2;
+  width: 302px;
+  font-size: 0;
+  margin: 0 auto;
+  display: none;
+  .icon{
+    color: #D64848;
+    padding: 0 12px;
+    font-size:18px;
+  }
+  .error-txt{
+    line-height: 28px;
+    height: 28px;
+    color: #6C6C6C;
+    font-size: 14px;
+  }
+}
+
+//正确信息提示
+.correct-tips{
+  background-color:#b9cffc;
+  width: 440px;
+  font-size: 0;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: none;
+  .icon{
+    color: #3c78f2;
+    padding: 0 12px;
+    font-size:20px;
+  }
+  .correct-txt{
+    line-height: 28px;
+    height: 28px;
+    color: #6C6C6C;
+    font-size: 14px;
+  }
+}

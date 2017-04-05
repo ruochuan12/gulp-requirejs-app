@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+	<meta name="renderer" content="webkit" />
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="0">
+	<title>gulp-require-app</title>
+	<link rel="stylesheet" href="./css/all.css">
+	<script data-main="./js/main.js" src="./vendor/require.min.js"></script>
+</head>
+<body>
+	<p>兼容IE6,7,8项目构建</p>
+	<p>gulp-require-app <a href="views/product.html">点击跳转到product页面</a></p>
+	<p>gulp-require-app <a href="views/shop/shopDetail.html">点击跳转到shopDetail页面</a></p>
+	<div class="txt">文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版文字排版</div>
+	<script>
+	require(['../js/main'],function(){			//这里不管参数是啥（即使为空），jquery都运行正常。
+		require(['../js/index']);
+	 });
+	</script>
+</body>
+</html>
