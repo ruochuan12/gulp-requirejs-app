@@ -15,6 +15,7 @@
   "devDependencies": {
     "amd-optimize": "^0.6.1",
     "browser-sync": "^2.18.8",
+    "event-stream": "^3.3.4",
     "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-clean-css": "^3.0.4",

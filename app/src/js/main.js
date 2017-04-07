@@ -1,3 +1,7 @@
+// @name:'main.js'
+// @author:'lxchuan12@163.com'
+// @time:'2017.04.06'
+
 // 匹配配置baseUrl
 // (function() {
 //     var global = window || (0, eval)('this');

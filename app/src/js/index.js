@@ -1,8 +1,8 @@
-/**
- * Created by Administrator on 2017/4/5.
- */
+// @name:'index.js'
+// @author:'lxchuan12@163.com'
+// @time:'2017.04.06'
 
-define(['a', 'b', 'c', './shop/shopDetail'],function(a,b,cM,shopDetail){
+define(['main','a', 'b', 'c', './shop/shopDetail'],function(a,b,cM,shopDetail){
     //如果是a.js则是相对于路径默认与main.js在同一个目录（js子目录）。如果是a则是相对于data-main里的文件路径（也就是默认baseUrl）
     a.aFn();
     b.bFn();

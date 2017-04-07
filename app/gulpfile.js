@@ -1,3 +1,7 @@
+// @name:'gulpfile.js'
+// @author:'lxchuan12@163.com'
+// @time:'2017.04.06'
+
 // 可参考：[聂微东-gulp使用小结(一)](http://www.cnblogs.com/Darren_code/p/gulp.html)
 
 // 引入gulp
@@ -51,7 +55,7 @@ gulp.task('js',function(){
 		.pipe($.plumber())
         // TO DO压缩合并优化requirejs代码
 		.pipe(amdOptimize(app.srcPath+'js/index')) // 主文件入口
-		// .pipe($.concat('main.js'))
+		.pipe($.concat('index.js'))
         // .pipe($.concat(app.devPath+'js'))
 		.pipe(gulp.dest(app.devPath+'js'))
 		.pipe($.uglify())
